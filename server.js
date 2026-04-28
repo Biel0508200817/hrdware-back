@@ -5,6 +5,9 @@ const express = require('express');
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
 
+console.log("SUPABASE_URL:", supabaseUrl);
+console.log("SUPABASE_KEY:", supabaseKey ? "OK" : "MISSING");
+
 const app = express();
 
 // Middlewares
